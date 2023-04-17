@@ -400,25 +400,25 @@ Alternatively if you want to just have a single hero
         // Ejercicio 1
         // Selecciona el texto que hay en el único h1 de la página 
 
-        let titulo; // let titulo = document.querySelector(...)
+        let titulo = document.querySelector("h1"); // let titulo = document.querySelector(...)
         console.log('Titulo: ', titulo); // 'NORDICS'
 
         // Ejercicio 2
         // Selecciona el texto que hay al final de la página, antes de la línea gris
 
-        let rollo;
+        let rollo = document.querySelector("#rollo-largo").textContent ;
         console.log('Rollo: ', rollo); // 'Que si blí que si blú'
 
         // Ejercicio 3
         // Selecciona el texto del primer item del menú de navegación
         // BONUS: NO modifiques el HTML para conseguirlo
 
-        let itemShop;
+        let itemShop=document.querySelector("a");   
         console.log('Primer item del menú: ', itemShop); // 'Shop'
 
         // Ejercicio 4
         // Muestra el valor del atributo .src de la ima imagen identificada con el id="producto-1"
-        let srcAtributo;
+        let srcAtributo=document.querySelector("#producto-1");
         console.log('El valor del atributo src de la primera imagen es: ', srcAtributo); // https://images.unsplash.com/photo-1555982105-d25af4182e4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&h=400&q=80
 
 
@@ -428,16 +428,17 @@ Alternatively if you want to just have a single hero
         // Ejercicio 5
         // MODIFICA el texto del segundo item de menu. En vez de 'About', deberíamos ver 'About US'
 
+     document.querySelector("#item-about").textContent = "About US"
         // Ejercicio 6
         // MODIFIFA el texto del primer producto del carousel de fotos (ese cojín raro), y cambia el texto por cualquier otra cosa que describa para ti mejor ese cojín
-
+ document.querySelector("#cojin-raro").textContent = "Cojín perfecto para una guerra de cojines"
         // Ejercicio 7
         // Modifica el color del fondo del <nav> al valor 'azure'
         // BONUS: NO modifiques el HTML
-
+document.querySelector("#header").style.backgroundColor="azure"
         // Ejercicio 8 (Difícil)
         // Cambia el valor del atributo .src de la segunda imagen por este otro https://i.ibb.co/j83Y290/fotogato.jpg
-
+document.querySelector("#producto-2").src="https://i.ibb.co/j83Y290/fotogato.jpg"
 
     </script>
 </body>
